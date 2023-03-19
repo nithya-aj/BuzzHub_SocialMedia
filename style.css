@@ -317,31 +317,27 @@ main .container .left .profile {
 }
 
 .middle .stories .story:nth-child(1) {
-    background: url('./images/story-1.jpg') no-repeat center center/cover;
+    background: url('./images/story1.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(2) {
-    background: url('./images/story-2.jpg') no-repeat center center/cover;
+    background: url('./images/story4.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(3) {
-    background: url('./images/story-3.jpg') no-repeat center center/cover;
+    background: url('./images/story2.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(4) {
-    background: url('./images/story-4.jpg') no-repeat center center/cover;
+    background: url('./images/story6.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(5) {
-    background: url('./images/story-5.jpg') no-repeat center center/cover;
+    background: url('./images/story3.png') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(6) {
-    background: url('./images/story-6.jpg') no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(7) {
-    background: url('./images/story-1.jpg') no-repeat center center/cover;
+    background: url('./images/story5.jpeg') no-repeat center center/cover;
 }
 
 .middle .story .profile-photo {
@@ -493,10 +489,13 @@ main .container .right {
 .right .message .profile-photo {
     position: relative;
     overflow: visible;
+    flex-shrink: 0;
 }
 
 .right .profile-photo img {
     border-radius: 50%;
+    height: 2.7rem;
+
 }
 
 .right .messages .message:last-child {
@@ -505,6 +504,11 @@ main .container .right {
 
 .right .messages .message p {
     font-size: 0.8rem;
+    width: 13rem;
+    padding-right: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .right .messages .message .profile-photo .active {
@@ -742,6 +746,9 @@ main .container .right {
     .customize-theme .card{
         width: 80vw;
     }
+    .right .messages .message p {
+        width: 9rem;
+    }
 }
 
 /* for small tablets and mobile phones */
@@ -762,19 +769,12 @@ main .container .right {
         left: 0;
     }
 
-    /* .left .notifications-popup::before {
-        display: absolute;
-        top: 1.3rem;
-        left: calc(20rem - 0.6rem);
-        display: block;
-    } */
+    .right .messages .message p {
+        width: 9rem;
+    }
 
     main .container .middle {
         grid-column: 2/4;
-    }
-
-    main .container .right {
-        display: none;
     }
 
     .middle .stories .story .name {
