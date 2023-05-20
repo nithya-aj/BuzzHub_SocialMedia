@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&family=Rubik:wght@400;700&display=swap');
 
 :root {
-    --primary-color-hue:252;
-    --dark-color-lightness:17%;
+    --primary-color-hue: 252;
+    --dark-color-lightness: 17%;
     --light-color-lightness: 95%;
-    --white-color-lightness:100%;
+    --white-color-lightness: 100%;
     --color-white: hsl(252, 30%, var(--white-color-lightness));
     --color-light: hsl(252, 30%, var(--light-color-lightness));
     --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
@@ -743,9 +743,11 @@ main .container .right {
     .right .messages .category h6 {
         font-size: 0.65rem;
     }
-    .customize-theme .card{
+
+    .customize-theme .card {
         width: 80vw;
     }
+
     .right .messages .message p {
         width: 9rem;
     }
@@ -767,6 +769,10 @@ main .container .right {
         position: fixed;
         bottom: 0;
         left: 0;
+    }
+
+    .right {
+        display: none;
     }
 
     .right .messages .message p {
@@ -805,7 +811,8 @@ main .container .right {
         border-bottom-right-radius: var(--card-border-radius);
         overflow: hidden;
     }
-    .customize-theme .card{
+
+    .customize-theme .card {
         width: 92vw;
     }
 
